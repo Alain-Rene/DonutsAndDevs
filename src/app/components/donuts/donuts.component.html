@@ -1,0 +1,8 @@
+<h1>Donuts!</h1>
+
+@for (d of  donutResult.results; track $index){
+    <h2>{{$index + 1}}. {{d.name}} </h2>
+    <img [src]="d.photo" class="donutImage">
+    <p>Photo attribution: <a [href]="d.photo_attribution" target="_blank">Click here!</a></p>
+}
+

@@ -1,0 +1,18 @@
+<h1>Hall of Fame!</h1>
+
+<div class="row headerText">
+    <h2 class="col-3">First Name</h2>
+    <h2 class="col-3">Last Name</h2>
+    <h2 class="col-3">Innovation</h2>
+    <h2 class="col-3">Year</h2>
+</div>
+@for(d of devsResult.complete; track $index ){
+
+    <div class="row">
+        <p class="col-3">{{ d.firstName }}</p>
+        <p class="col-3">{{ d.lastName }}</p>
+        <p class="col-3">{{ d.innovation }}</p>
+        <p class="col-3">{{ d.year }}</p>
+    </div>
+
+}
